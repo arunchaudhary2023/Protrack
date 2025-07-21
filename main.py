@@ -415,6 +415,7 @@ if st.session_state.current_project:
                 # Burnup chart
                 st.subheader("Burnup Chart")
                 burnup_data = project_progress_data.copy()
+                burnup_data['Date'] = pd.to_datetime(burnup_data['Date'], errors='coerce')
                 burnup_data['Cumulative Days'] = (burnup_data['Date'] - burnup_data['Date'].min()).dt.days + 1
 
                 fig = px.line(
