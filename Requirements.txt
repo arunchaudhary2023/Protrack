@@ -1,2 +1,4 @@
-install plotly
-install opencv-python
+streamlit
+pandas
+plotly
+numpy
