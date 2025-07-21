@@ -1,1 +1,5 @@
- import plotly.express as px
+streamlit
+plotly
+pandas
+numpy
+opencv-python
